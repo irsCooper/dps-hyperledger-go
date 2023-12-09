@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/static"> -->
+    <title>{{.title}}</title>
+</head>
+<body>
+    
+    <header>
+        
+        <div class="logo-header-div">
+            <img src="whitecar.png" alt="car">
+            <span class="logo">Transport Service</span>
+        </div>
+
+        <nav class="menu">
+            <a href="/home">Главная</a>
+
+            {{ if .Header }}
+                <a href="/lk">Личный Кабинет</a>
+                <a href="/exit">Выйти</a>
+            {{ else }}
+                <a href="#login" id="href-to-form-login">Войти</a>
+            {{ end }}
+        </nav>
+
+        <div></div>
+    </header>
+
+    <main class="container">
+

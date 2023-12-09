@@ -1,0 +1,55 @@
+{{ template "header.html" .}}
+
+<title>Transport Service</title>
+
+<div class="div-login-form" id="login">
+
+    <a href="/" class="login-form-close"></a>
+    <form action="/login" class="login-form" method="post">
+        <div class="in-login-form-1">
+            <h1>Войти</h1>
+            <div class="in-login-form-2">
+                <label for="fio">Ваше полное ФИО</label>
+                <input type="text" name="fio" placeholder="" title="" required>
+            </div>
+
+            <button type="submit" class="login-button">войти</button>
+        </div>
+
+
+
+        <div class="in-login-form-1-1">
+            
+            <div class="login-form-error">
+                <p>{{ .error }}</p>
+            </div>
+
+
+            <div class="info-for-reg">
+                <p>Если у вас ещё нет аккаунта, вы можете зарегистрироваться нажав на кнопку ниже.</p>
+                <a href="/reg">зарегистрироваться</a>
+            </div>
+
+        </div>
+        
+    </form>
+
+
+</div>
+
+
+
+
+<div class="index-div-levl-1">
+
+    <div class="index-div-levl-2">
+        <p>
+            Добро пожаловать в нашу систему «Безопасное дорожное движение». Вы можете добавить своё водительское удостоверение
+            и транспорт, чтобы в дальнейшем вам было удобно отслеживать дтп и штрафы, и вовремя оплачивать их. У нас действует система скидок -
+            если вы оплачиваете штраф в первые 5 дней (в нашем случае 5 минут), то стоимость штрафа снижается в 2 раза и составляет 5 ProfiCoin.
+        </p>
+    </div>
+
+</div>
+
+{{ template "footer.html" .}}
